@@ -1,0 +1,25 @@
+<h1>Nuevo producto</h1>
+
+<%= form_with(url: posts_dashboard_path, local:true)   do |f|  %>
+
+<div class="form-control">
+  <%= f.label 'title' %>
+  <%= f.text_field :title %>
+</div>
+
+
+<div class="form-control">
+  <%= f.label 'content' %>
+  <%= f.text_field :content %>
+</div>
+
+<div class="form-control">
+  <%= f.label 'image_url' %>
+  <%= f.text_field :image_url %>
+</div>
+
+<div class="form-control">
+    <%= f.submit 'enviar'%>
+</div>
+
+<%end%>
